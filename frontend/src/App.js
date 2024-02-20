@@ -7,7 +7,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" component={Login} />
+       
+        
+
+        <Route path="/login" element={
+          <Login/>
+        } />
+        
         <Route path="/" element={
           <Home/>
         } />

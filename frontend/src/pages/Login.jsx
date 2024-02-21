@@ -13,12 +13,11 @@ function Login() {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-3xl font-bold text-center mt-8">Farmtracker</h1>
-      <h2 className="text-3xl font-bold text-center mt-8">Welcome Back</h2>
+      <h1 className="text-3xl font-bold text-center mt-8">Login</h1>
       <form className="mt-8">
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-            Your email 
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
+            Username
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -30,10 +29,8 @@ function Login() {
           />
         </div>
         <div className="mb-4">
-          
-          
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-            Your Password
+            Password
           </label>
           <input
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -62,4 +59,5 @@ function Login() {
   );
 }
 
-export default Login;
+export default Login;         
+

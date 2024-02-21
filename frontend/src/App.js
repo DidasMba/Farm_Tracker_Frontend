@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home';
 import Login from './pages/Login'; // Make sure the path to Login is correct
+import SignUp from './pages/SignUp';
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
         
         <Route path="/" element={
           <Home/>
+        } />
+
+        <Route path='/Signup' element={
+          <SignUp/>
         } />
       </Routes>
     </Router>

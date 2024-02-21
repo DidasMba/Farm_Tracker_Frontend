@@ -16,10 +16,12 @@ function App() {
         <Route path="/" element={
           <Home/>
         } />
-
-        <Route path='/Signup' element={
+        
+        <Route path="/register" element={
           <SignUp/>
         } />
+
+
       </Routes>
     </Router>
   );

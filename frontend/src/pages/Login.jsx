@@ -28,7 +28,8 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group second-form-group">
+
               <label htmlFor="password">Password</label>
               <input
                 type="password"

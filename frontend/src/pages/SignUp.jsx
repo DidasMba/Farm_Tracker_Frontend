@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,73 +10,65 @@ function SignUp() {
   const [role, setRole] = useState('worker'); // Default role is worker
 
   const handleSignUp = () => {
-    // Ajouter ici la logique d'inscription
+    // Ajoutez ici la logique d'inscription
     console.log('Signing up...');
   };
 
   return (
-    <div className="container mx-auto">
-      <h1 className="text-3xl font-bold text-center mt-8">Sign Up</h1>
-      <form className="mt-8">
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstName">
-            Firstname
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="firstName"
-            type="text"
-            placeholder="Enter your firstname"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-          />
+    <div className="container mt-5">
+      <h1 className="text-center mb-4">Sign Up</h1>
+      <form>
+        <div className="form-row">
+          <div className="form-group col-md-6">
+            <label htmlFor="firstName">First Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="firstName"
+              placeholder="First Name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+          </div>
+          <div className="form-group col-md-6">
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              type="text"
+              className="form-control"
+              id="lastName"
+              placeholder="Last Name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+            />
+          </div>
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="lastName">
-            Lastname
-          </label>
+        <div className="form-group">
+          <label htmlFor="email">Email address</label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="lastName"
-            type="text"
-            placeholder="Enter your lastname"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-            Email
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
             type="email"
-            placeholder="Enter your email"
+            className="form-control"
+            id="email"
+            placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-            Password
-          </label>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="password"
             type="password"
-            placeholder="Enter your password"
+            className="form-control"
+            id="password"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="role">
-            Role
-          </label>
+        <div className="form-group">
+          <label htmlFor="role">Role</label>
           <select
+            className="form-control"
             id="role"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             value={role}
             onChange={(e) => setRole(e.target.value)}
           >
@@ -83,19 +76,17 @@ function SignUp() {
             <option value="admin">Admin</option>
           </select>
         </div>
-        <div className="flex justify-center">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button"
-            onClick={handleSignUp}
-          >
-            Sign Up
-          </button>
-        </div>
+        <button
+          type="button"
+          className="btn btn-primary"
+          onClick={handleSignUp}
+        >
+          Sign Up
+        </button>
       </form>
-      <div className="text-center mt-4">
-        <span className="text-gray-700">Already have an account? </span>
-        <Link to="/login" className="text-blue-500 hover:underline">Sign In</Link>
+      <div className="text-center mt-3">
+        <span>Already have an account? </span>
+        <Link to="/login">Sign In</Link>
       </div>
     </div>
   );

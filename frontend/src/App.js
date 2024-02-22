@@ -17,7 +17,7 @@ function App() {
           <Home/>
         } />
         
-        <Route path="/register" element={
+        <Route path="/signup" element={
           <SignUp/>
         } />
 

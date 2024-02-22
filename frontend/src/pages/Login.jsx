@@ -40,17 +40,17 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="form-group"> {/* Ajout d'une grande espace entre les deux formulaires */}
-            <div className="form-group d-flex justify-content-center mt-5"> {/* Utilisez d-flex et justify-content-center pour centrer le bouton */}
+          
+            <div className="form-group d-flex justify-content-center mt-5 login-button-container"> {/* Utilisez d-flex et justify-content-center pour centrer le bouton */}
               <button
                 type="button"
-                className="btn btn-success btn-block"
+                className="btn btn-success btn-block custom-login-button"
                 onClick={handleLogin}
               >
                 Login
               </button>
             </div>
-            </div>
+           
           </form>
           <div className="text-center mt-3">
             <span>Don't have an account? </span>

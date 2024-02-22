@@ -1,4 +1,15 @@
-.custom-bg-color {
-    background: #62804A;
+.custom-login-button {
+  background-color: #62804A;
+  border-color: #62804A; /* Définir également la couleur de la bordure */
+  width: 350px;
+  font-weight: bold;
+
+}
+
+
+  
+
+  .second-form-group {
+    margin-top: 50px; /* Ou toute autre valeur de marge souhaitée */
   }
   

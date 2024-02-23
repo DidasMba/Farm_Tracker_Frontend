@@ -6,6 +6,9 @@
 
 }
 
+.text-center > span {
+  margin-right: 20px; /* Ajoutez la marge souhaitée */
+}
 
   
 

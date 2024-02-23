@@ -41,7 +41,7 @@ function Login() {
               />
             </div>
             {/* Ajout de la case à cocher et de l'étiquette */}
-            <div className="form-group form-check">
+            <div className="form-group form-check d-flex justify-content-center align-items-center mb-3">
               <input
                 type="checkbox"
                 className="form-check-input"

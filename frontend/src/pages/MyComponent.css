@@ -11,11 +11,13 @@
 }
 
 .second-form-group{
-    margin-top: 50px; /* Ou toute autre valeur de marge souhaitée */
+    margin-top: 45px; /* Ou toute autre valeur de marge souhaitée */
   }
-  
-  .custom-login-button {
-   text-decoration-color:red ;
-  }
+ 
+
+.second-form-group1{
+  margin-top: 20px;
+}
+
   
   

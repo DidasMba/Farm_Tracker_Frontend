@@ -3,21 +3,28 @@ import { Link } from 'react-router-dom';
 import './MyComponent.css';
 
 function Login() {
+  // State variables for email, password, and admin status
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [isAdmin, setIsAdmin] = useState(false); // État pour la case à cocher admin
+  const [isAdmin, setIsAdmin] = useState(false); // State for the admin checkbox
 
+  // Function to handle the login action
   const handleLogin = () => {
-    // Ajoutez ici la logique de connexion
+    // Add login logic here
     console.log('Logging in...');
   };
 
+  // Render the login form
   return (
     <div className="container mt-5">
+      {/* Centering the form */}
       <div className="d-flex justify-content-center">
         <div className="col-md-6">
+          {/* Title */}
           <h1 className="text-center mb-4">Login</h1>
+          {/* Form */}
           <form className="custom-form">
+            {/* Email input */}
             <div className="form-group">
               <label htmlFor="email">Email address</label>
               <input
@@ -29,6 +36,7 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
+            {/* Password input */}
             <div className="form-group second-form-group">
               <label htmlFor="password">Password</label>
               <input
@@ -40,18 +48,18 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            {/* Ajout de la case à cocher et de l'étiquette */}
+            {/* Admin checkbox and label */}
             <div className="form-group form-check d-flex justify-content-center align-items-center mb-3">
               <input
                 type="checkbox"
                 className="form-check-input"
                 id="isAdmin"
                 checked={isAdmin}
-                onChange={() => setIsAdmin(!isAdmin)} // Inversion de la valeur de isAdmin lorsqu'on change la case à cocher
+                onChange={() => setIsAdmin(!isAdmin)} // Toggle the isAdmin state when the checkbox is changed
               />
               <label className="form-check-label" htmlFor="isAdmin">Login as admin</label>
             </div>
-
+            {/* Login button */}
             <div className="form-group d-flex justify-content-center mt-3">
               <button
                 type="button"
@@ -61,8 +69,8 @@ function Login() {
                 Login
               </button>
             </div>
-         
           </form>
+          {/* Signup link */}
           <div className="text-center mt-3">
             <span>Don't have an account? </span>
             <Link to="/signup">Sign Up</Link>
@@ -74,4 +82,5 @@ function Login() {
 }
 
 export default Login;
+
 

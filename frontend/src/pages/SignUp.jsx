@@ -80,7 +80,7 @@ function SignUp() {
             <div className="form-group d-flex justify-content-center mt-3">
               <button
                 type="button"
-                className="btn btn-primary btn-block custom-login-button" // Applying custom styles
+                className="btn btn-success btn-block custom-login-button" // Applying custom styles
                 onClick={handleSignUp}
               >
                 Sign Up
